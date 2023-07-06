@@ -192,7 +192,7 @@ impl Backend {
 
     pub fn write_pairing_file(&self, plist: String, udid: &String) -> Result<(), ()> {
         let path = format!("{}/{}.plist", &self.plist_storage, &udid);
-        let mut file = std::fs::File::create(&path).unwrap();
+        let mut file = std::fs::File::create(path).unwrap();
         match std::io::Write::write_all(&mut file, plist.as_bytes()) {
             Ok(_) => Ok(()),
             Err(_) => Err(()),
@@ -201,7 +201,7 @@ impl Backend {
 
     pub fn _remove_pairing_file(&self, udid: &String) -> Result<(), ()> {
         let path = format!("{}/{}.plist", &self.plist_storage, &udid);
-        match std::fs::remove_file(&path) {
+        match std::fs::remove_file(path) {
             Ok(_) => Ok(()),
             Err(_) => Err(()),
         }
