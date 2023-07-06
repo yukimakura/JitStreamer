@@ -1,5 +1,5 @@
 # JitStreamer
-A program to activate JIT across the far reaches of the internet
+A program to activate JIT across the far reaches of the internet 
 
 This program runs on a Linux server and requires the following:
 - [rusty_libimobiledevice](https://github.com/jkcoxson/rusty_libimobiledevice)
