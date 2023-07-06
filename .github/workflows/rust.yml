@@ -2,7 +2,7 @@ name: JitStreamer
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master" , "forbuild" ]
   pull_request:
     branches: [ "master" ]
 
