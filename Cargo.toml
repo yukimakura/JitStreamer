@@ -28,7 +28,7 @@ log = { version = "*" }
 env_logger = { version = "*" }
 
 rusty_libimobiledevice = { version = "*", features = [ "static", "vendored" ] }
-plist_plus = { version = "*", features = [ "static", "vendored" ] }
+plist_plus = { version = "0.2.1", features = [ "static", "vendored" ] }
 
 [[bin]]
 name = "pair"
